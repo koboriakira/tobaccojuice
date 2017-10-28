@@ -16,11 +16,11 @@
   <meta name="description" content="サイト説明文" />
   <meta name="keywords" content="キーワード" />
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>node_modules/normalize.css/normalize.css" media="all">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/node_modules/font-awesome/css/font-awesome.min.css" media="all">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/normalize.css" media="all">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/font-awesome.min.css" media="all">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
-  <script src="<?php echo get_template_directory_uri(); ?>/node_modules/vue/dist/vue.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/common/js/common.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/dist/js/vue.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/dist/js/common.js"></script>
   <!-- [if lt IE 9]>
     <script src="node_module/html5shiv/dist/html5shiv.min.js"></script>
   <![endif]-->
