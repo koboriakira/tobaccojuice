@@ -1,0 +1,587 @@
+/*
+Theme Name: tobaccojuice
+Description: Simple Theme for my blog.
+Author: Akira Kobori
+Author URI: http://koboriakira.com/
+Version: 1.0
+License: GNU, General Public License
+Tags: white
+*/
+
+/* ==============================================================
+  html5 elements
+==============================================================*/
+
+article, aside, figure, figcaption, footer, header, nav, section {
+  display: block;
+}
+
+/* ==============================================================
+  resetting
+==============================================================*/
+
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fffffa;
+  color: #000;
+  line-height: 1.6em;
+  font-size: 16px;
+  font-weight: 200;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (min-width:768px) {
+  body {
+    line-height: 1.8;
+    font-size: 16px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fffffa;
+}
+
+@media
+
+body, input, textarea, select, button {
+  /* google fonts */
+  font-family: "Noto Sans Japanese";
+  /* ゴシック */
+  /*font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;*/
+  /* 明朝 */
+  /*font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;*/
+}
+
+p {
+  margin: 0 0 30pt 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+}
+
+ul {
+  margin:0;
+  padding:0;
+}
+
+li {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+a {
+  color: #0044cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #90c0f0;
+}
+
+strong, em {
+  font-weight: 200;
+  font-style: normal;
+}
+
+img, iframe {
+  width: 100%;
+}
+
+blockquote {
+  margin: 0 0 30pt 0;
+  border-left: 2px solid #ff9933;
+  padding: 5pt 8pt 5pt 8pt;
+  background-color: #eee;
+}
+
+blockquote > p {
+  margin-bottom: 20pt;
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+
+/* ==============================================================
+  media
+==============================================================*/
+
+@media (min-width: 768px) {
+  .is-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .is-pc {
+    display: none;
+  }
+}
+
+/* ==============================================================
+  common
+==============================================================*/
+
+.box-cmn {
+  display: inline-block;
+}
+
+/*
+ page-numbersとlink-pagerは、ページナビゲーション用のボタン。
+ */
+.link-btn-cmn, .page-numbers, .link-pager a {
+  display: inline-block;
+  min-width: 50px;
+  margin: 0 10pt 0 0;
+  padding: 3pt 5pt;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+  background-color: #ff9933;
+}
+
+.link-btn-cmn:hover, .page-numbers:hover, .link-pager a:hover {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  background-color: #ffcc99;
+  color: #fff;
+}
+
+.form-btn-cmn {
+  padding: 10px 20px;
+  /*font-size: 1.2em;*/
+  background-color: #ff9933;
+  color: #fff;
+  border-style: none;
+}
+
+.form-text-cmn {
+  border:0;
+  border-radius: 3px;
+  padding:10px;
+  font-size:　1em;
+  font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  color:#000;
+  border:solid 1px #ccc;
+}
+
+.mod-list-cmn {
+  padding-left: 20pt;
+}
+
+.mod-list-cmn > li {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+.mod-article-lead-cmn {
+  font-size: 0.9em;
+  color: #808080;
+}
+
+/* ==============================================================
+  header
+==============================================================*/
+
+.header {
+  width: 100%;
+  max-width: 800px;
+  padding: 15pt 0 0 0;
+}
+
+  .box-title {
+    text-align: center;
+  }
+
+    .ttl-main {
+      font-size: 0.9em;
+      color: #bbb;
+    }
+
+  .header-nav-menu {
+    width: 100%;
+    max-width: 640px;
+    margin: 8pt auto 0;
+  }
+
+  .header-nav-menu:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+    .box-nav {
+    }
+
+      .nav-list {
+      }
+
+        .mod-nav-cmn {
+          display: inline-block;
+          float: left;
+          margin: 0;
+          padding: 5pt 10pt;
+        }
+
+/* ==============================================================
+  single, article
+==============================================================*/
+
+.contents {
+  max-width: 640px;
+  margin: 15pt auto 0;
+  padding: 0 7pt 0 7pt;
+}
+
+.content-no-padding {
+  padding: 0;
+}
+
+  .area-article-ttl {
+
+  }
+
+    .ttl-article {
+      font-size: 1.2em;
+    }
+
+.box-article-lead {
+  /*border-top: 1px solid #ccc;*/
+  border-bottom: 1px solid #ccc;
+  margin-top: 10pt;
+  padding: 8pt 0;
+}
+
+.area-article-meta-info {
+  margin: 3pt 0 0 0;
+  font-size: 0.8em;
+}
+
+  .box-article-meta-info > li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+    .box-article-meta-info > li > i {
+      color: #ff9933;
+    }
+
+.article-toc {
+  margin-top: 20pt;
+}
+  .article-toc-title {
+    text-align: left;
+    font-size: 0.9em;
+  }
+
+  .toc-list {
+    margin: 8pt 0 0 10pt;
+    padding: 0;
+  }
+
+    .toc-list li {
+      padding: 3pt 0 3pt 0;
+    }
+
+    .toc-sub-list {
+      margin:0 0 5pt 20pt;
+      padding: 0;
+    }
+
+      .toc-sub-list > li {
+        font-size: 0.9em;
+      }
+
+.article-main {
+  margin: 25pt 0 0 0;
+}
+
+  .article-main h2 {
+    margin: 4em 0 2em 0;
+    font-size: 1.1em;
+  }
+
+  .article-main h3 {
+    margin: 3em 0 2em 0;
+    font-size: 1em;
+  }
+
+  .article-main strong {
+    font-weight: bold;
+    background: linear-gradient(transparent 70%, #ffff66 70%);
+  }
+
+  /* 過去記事の強調表現の見た目を揃えるため、普通のemタグとbタグはstrongに合わせる*/
+  .article-main em, .article-main b {
+    font-weight: bold;
+    background: linear-gradient(transparent 70%, #ffff66 70%);
+  }
+
+  .article-main em.term {
+    color: #900;
+  }
+
+  .article-main em.term:before {
+    content: "《"
+  }
+
+  .article-main em.term:after {
+    content: "》"
+  }
+
+  .article-share-mixcloud {
+    margin: 35pt 10pt 35pt 10pt;
+  }
+
+  .article-main hr {
+    margin: 3em 0;
+    border-style: none;
+  }
+
+    .article-main hr::before {
+      content: "・";
+    }
+
+  .article-main ul, .article-main ol {
+      padding-left: 1.5em;
+      margin-bottom: 2em;
+  }
+
+    .article-main li {
+      list-style-position: inside;
+      padding-bottom: 1em;
+    }
+
+    .article-main li:last-child {
+      padding-bottom: 0;
+    }
+
+    .article-main ul li {
+      list-style-type: circle;
+
+    }
+
+    .article-main ol li {
+      list-style-type: decimal;
+    }
+
+.contents-sub {
+
+}
+
+  .area-recommend {
+    border-top: 4pt solid #ff9933;
+    border-right: 1pt solid #ccc;
+    border-bottom: 1pt solid #ccc;
+    border-left: 1pt solid #ccc;
+    margin-top: 25pt;
+    padding: 10pt 8pt 0 8pt;
+  }
+
+    .box-recommend {
+      margin-bottom: 0;
+      padding-bottom: 10pt;
+    }
+
+    .mod-article-list {
+      margin: 7pt 0 0 0;
+    }
+
+      .mod-article-list > li {
+        margin-top: 7pt;
+      }
+
+        .mod-article-link {
+          font-size: 0.8em;
+        }
+
+    .ttl-recommend-article {
+    }
+
+  .area-article-comment {
+    margin-top: 15pt;
+    padding-top: 10pt;
+  }
+
+    .ttl-article-comments {
+      font-size: 1em;
+    }
+
+    .article-comment {
+      margin: 10pt 0 0 0;
+    }
+
+    .article-comment-res {
+      padding-left: 15pt;
+    }
+
+    .comment-meta-info {
+      font-size: 0.8em;
+      color: #888;
+    }
+
+    .comment-main {
+      font-size: 0.9em;
+    }
+
+    .comment-main > p {
+      margin: 0;
+    }
+
+    .article-comment-form {
+      margin-top: 20pt;
+    }
+
+      .mod-comment-form-cmn {
+        margin-top: 5pt;
+      }
+
+        .form-text-name {
+          width: 250px;
+        }
+
+        @media (min-width:768px)  {
+          .form-text-comment {
+            width:auto;
+          }
+        }
+
+        @media (max-width:768px) {
+          .form-text-comment {
+            width: 300px;
+          }
+        }
+
+
+/*記事のカテゴリを出すようのCSS。
+　Wordpress側でハードコーディングされているため、
+　いったんこれに乗っ取ってCSSを書く*/
+
+.post-categories {
+  display: inline-block;
+}
+
+.post-categories li {
+  display: inline-block;
+}
+
+  .post-categories li::before {
+    content: ", ";
+  }
+
+  .post-categories li:first-child::before {
+    content: "";
+  }
+
+/* ==============================================================
+  page
+==============================================================*/
+.box-works {
+
+}
+
+.ttl-works-genre {
+  padding-left: 10pt;
+  color: #000;
+}
+
+.ttl-works-genre {
+  /*font-size: 1em;*/
+}
+
+.ttl-works-sub-genre {
+  font-size: 1.2em;
+}
+
+.box-grid-square {
+  float:left;
+  width: 50%;
+}
+
+@media (min-width:768px) {
+  .box-grid-square {
+  width: 33.3%;
+  }
+}
+
+.box-grid-clear {
+  clear: both;
+}
+
+/* ==============================================================
+  article-summary
+==============================================================*/
+
+.area-article-summary {
+
+}
+  .box-article-summary {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 15pt;
+    padding-bottom: 5pt;
+  }
+
+    .box-article-summary-meta-info {
+      margin-bottom: 3pt;
+      font-size: 0.8em;
+    }
+
+    .ttl-article-summary {
+      margin-bottom: 5pt;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    .box-article-summary-lead {
+      margin-top: 10pt;
+    }
+
+/* ==============================================================
+  page-navigation
+==============================================================*/
+
+/* Wordpressのページナビゲーションのタイトルを非表示にする。*/
+h2.screen-reader-text {
+  display: none;
+}
+
+.pagination {
+  text-align: center;
+}
+
+/*link-btn-cmnをベースに、一列に並ぶようにサイズだけ強制変更。*/
+.page-numbers, .link-pager a  {
+  min-width: 30px !important;
+}
+
+  .prev-post-link {
+    float: left;
+  }
+
+  .next-post-link {
+    float: right;
+  }
+
+/* ==============================================================
+  footer
+==============================================================*/
+
+.footer {
+  margin-top: 25pt;
+  padding: 15pt 0 15pt 0;
+}
+  .footer-copyright {
+    text-align: center;
+    font-size: 0.8em;
+    color: #bbb;
+  }
