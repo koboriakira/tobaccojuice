@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/normalize.css" media="all">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/font-awesome.min.css" media="all">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
-  <script src="<?php echo get_template_directory_uri(); ?>/dist/js/vue.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/dist/js/vue.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/dist/js/common.js"></script>
   <!-- [if lt IE 9]>
     <script src="node_module/html5shiv/dist/html5shiv.min.js"></script>
