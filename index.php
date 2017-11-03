@@ -36,7 +36,12 @@
                 <hi class="ttl-article-summary"><?php the_title() ?></hi><!-- .ttl-article -->
               </a>
               <div class="mod-article-lead-cmn box-article-summary-lead">
-                <?php echo mb_substr(get_the_excerpt(),0,150); ?>
+                <?php $ccc = get_post_meta($post->ID, 'intro', true);?>
+                <?php if(empty($ccc)):?>
+                  <?php echo mb_substr(get_the_excerpt(),0,150); ?>
+                <?php else:?>
+                  <?php echo post_custom('intro');?>
+                <?php endif;?>
               </div><!-- .article-summary-lead -->
             </section><!-- .box-article -->
           <?php endforeach; wp_reset_postdata();?>
