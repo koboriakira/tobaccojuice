@@ -10,8 +10,8 @@ gulp.task('browser-sync', ['server'], () =>
   gulp.watch(['common/**/*', '*.html', 'style_dev.css'], ['reload'])
 )
 
-/* デプロイ作業 */ 
-gulp.task('deploy', ['clean-css', 'dist-common','dist-nrm', 'dist-fa-css', 'dist-fa-fonts', 'dist-vue', 'ftp'])
+/* デプロイ作業 */
+gulp.task('deploy', ['dist-css', 'dist-js', 'dist-img', 'dist-nrm', 'dist-fa-css', 'dist-fa-fonts', 'dist-vue', 'ftp'])
 
 
 
@@ -55,14 +55,25 @@ gulp.task('reload', () =>
   browserSync.reload()
 )
 
-gulp.task('dist-common', () =>
-  gulp.src('common/+(css|js|img)/**/*')
+gulp.task('dist-css', () =>
+  gulp.src('common/css/*')
     .pipe(cleancss())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist/css'))
+)
+
+gulp.task('dist-js', () =>
+  gulp.src('common/js/*')
+    .pipe(gulp.dest('dist/js'))
+)
+
+gulp.task('dist-img', () =>
+  gulp.src('common/img/**/*')
+    .pipe(gulp.dest('dist/img'))
 )
 
 gulp.task('dist-nrm', () =>
   gulp.src('node_modules/normalize.css/normalize.css')
+    .pipe(cleancss())
     .pipe(gulp.dest('dist/css'))
 )
 
