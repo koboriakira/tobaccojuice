@@ -16,10 +16,14 @@
           <?php while (have_posts()) : the_post(); ?>
             <!-- タイトル -->
             <div class="area-article-ttl">
-              <h1 class="ttl-article"><?php the_title() ?></h1>
+              <h1 class="ttl-article">
+                <?php the_title() ?>
+              </h1>
             </div><!-- .area-article-ttl -->
             <!-- メイン -->
-            <div class="article-main"><?php the_content(); ?></div>
+            <div class="article-main">
+              <?php the_content(); ?>
+            </div>
           <?php endwhile; ?>
         <?php endif; ?>
       </article>

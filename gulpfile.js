@@ -15,7 +15,7 @@ gulp.task('reload', () =>
 )
 
 gulp.task('dist-common', () =>
-  gulp.src('common/+(css|js)/*')
+  gulp.src('common/+(css|js|img)/**/*')
     .pipe(gulp.dest('dist'))
 )
 
