@@ -190,6 +190,51 @@ blockquote > p {
   color: #808080;
 }
 
+
+/* ==============================================================
+  button
+==============================================================*/
+
+.area-share-sns {
+  margin: 10pt 0;
+}
+
+  .box-share-btn {
+    display: inline-block;
+    float: left;
+    margin: 0 3pt 0 0;
+  }
+
+    .link-btn-share-sns {
+      padding: 0 5pt;
+      border-radius: 5px;
+      font-size: 0.8em;
+    }
+
+    .box-share-btn-hatena {
+      margin-top: 3pt;
+    }
+
+      .link-btn-twitter {
+        font-size: 0.8em;
+        background-color: #0092e6;
+      }
+
+        .link-btn-twitter:hover {
+          font-size: 0.8em;
+          background-color: #33b0ff;
+        }
+
+      .link-btn-facebook {
+        font-size: 0.8em;
+        background-color: #3c61b6;
+      }
+
+        .link-btn-facebook:hover {
+          font-size: 0.8em;
+          background-color: #70a0e0;
+        }
+
 /* ==============================================================
   header
 ==============================================================*/

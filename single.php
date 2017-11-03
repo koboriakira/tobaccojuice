@@ -30,6 +30,9 @@
           <!-- リード情報 -->
           <div class="mod-article-lead-cmn box-article-lead"><?php get_the_excerpt(); ?></div>
 
+          <!-- シェアボタン -->
+          <?php get_share_sns_btn(); ?>
+
           <!-- メイン -->
           <div class="article-main"><?php the_content(); ?></div>
 

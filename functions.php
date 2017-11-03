@@ -42,4 +42,8 @@
     return include( TEMPLATEPATH . '/smart-profile.php' );
   }
 
+  function get_share_sns_btn() {
+    return include( TEMPLATEPATH . '/share-sns-btn.php' );
+  }
+
 ?>
