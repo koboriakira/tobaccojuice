@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/normalize.css" media="all">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/font-awesome.min.css" media="all">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/style.css" type="text/css" />
   <!-- [if lt IE 9]>
     <script src="node_module/html5shiv/dist/html5shiv.min.js"></script>
   <![endif]-->
