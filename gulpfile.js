@@ -12,7 +12,7 @@ gulp.task('server', () =>
   })
 )
 
-gulp.task( 'deploy', function () {
+gulp.task( 'ftp', function () {
     // FTPアカウント
     var conn = ftp.create( {
         host:     'ftp.14451a4e1a4ab9a2.lolipop.jp',
@@ -73,4 +73,4 @@ gulp.task('default', ['server'], () =>
   gulp.watch(['common/**/*', '*.html', 'style.css'], ['reload'])
 )
 
-gulp.task('prepare-release', ['dist-common','dist-nrm', 'dist-fa-css', 'dist-fa-fonts', 'dist-vue'])
+gulp.task('deploy', ['dist-common','dist-nrm', 'dist-fa-css', 'dist-fa-fonts', 'dist-vue', 'ftp'])
