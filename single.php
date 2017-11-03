@@ -28,7 +28,9 @@
           </div><!-- .area-article-ttl -->
 
           <!-- リード情報 -->
-          <div class="mod-article-lead-cmn box-article-lead"><?php get_the_excerpt(); ?></div>
+          <div class="mod-article-lead-cmn box-article-lead">
+            <?php echo esc_html( get_post_meta( $post->ID, 'intro', true ) ); ?>
+          </div>
 
           <!-- シェアボタン -->
           <?php get_share_sns_btn(); ?>
