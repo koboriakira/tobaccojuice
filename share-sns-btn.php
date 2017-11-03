@@ -1,12 +1,12 @@
 <div class="area-share-sns">
   <div class="box-share-btn">
     <a class="link-btn-cmn link-btn-share-sns link-btn-twitter"
-      href="https://twitter.com/intent/tweet?text=<?php the_title() ?>&url=<?php the_permalink() ?>">
+      href="https://twitter.com/intent/tweet?text=<?php the_title(); echo " :: "; bloginfo('name'); ?>&url=<?php the_permalink() ?>" target="_blank">
         <i class="fa fa-twitter fa-1x" aria-hidden="true"></i> Tweet
     </a>
   </div>
   <div class="box-share-btn">
-    <a class="link-btn-cmn link-btn-share-sns link-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>">
+    <a class="link-btn-cmn link-btn-share-sns link-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>" target="_blank>
       <i class="fa fa-thumbs-up" aria-hidden="true"></i> Facebook
     </a>
   </div>
