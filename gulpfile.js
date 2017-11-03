@@ -40,7 +40,7 @@ gulp.task('dist-vue', () =>
 )
 
 gulp.task('default', ['server'], () =>
-  gulp.watch(['common/**/*', '*.html'], ['reload'])
+  gulp.watch(['common/**/*', '*.html', 'style.css'], ['reload'])
 )
 
 gulp.task('prepare-release', ['dist-common','dist-nrm', 'dist-fa-css', 'dist-fa-fonts', 'dist-vue'])

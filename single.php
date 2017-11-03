@@ -51,6 +51,7 @@
           <?php get_related_entries(); ?>
           <?php get_popular_entries(); ?>
         </div>
+        <?php get_smart_profile(); ?>
         <!-- .area-recommend -->
       </div>
       <!-- .contents-sub -->

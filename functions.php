@@ -38,4 +38,8 @@
     return include( TEMPLATEPATH . '/popular-entries.php' );
   }
 
+  function get_smart_profile() {
+    return include( TEMPLATEPATH . '/smart-profile.php' );
+  }
+
 ?>
