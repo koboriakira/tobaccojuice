@@ -114,6 +114,18 @@ blockquote > p {
   line-height: 1.8em;
 }
 
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /* ==============================================================
   media
 ==============================================================*/
@@ -187,6 +199,11 @@ blockquote > p {
 
 .mod-article-lead-cmn {
   font-size: 0.9em;
+  color: #808080;
+}
+
+.note {
+  font-size: 0.8em;
   color: #808080;
 }
 
@@ -508,7 +525,6 @@ blockquote > p {
           }
         }
 
-
 /*記事のカテゴリを出すようのCSS。
 　Wordpress側でハードコーディングされているため、
 　いったんこれに乗っ取ってCSSを書く*/
@@ -633,7 +649,7 @@ h2.screen-reader-text {
   }
 
 /* ==============================================================
-  footer
+  smart-profile
 ==============================================================*/
 
 @media (min-width: 768px) {
@@ -703,4 +719,100 @@ h2.screen-reader-text {
         margin: 5pt 30pt 0 30pt;
         font-size: 0.9em;
       }
+}
+
+/* ==============================================================
+  contact-form
+==============================================================*/
+
+
+.area-contact-form {
+  border-top: 4px solid #ff9933;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  /*width: 624px;*/
+  margin-top: 13px;
+  padding: 5px 7px;
+}
+
+.area-contact-form {
+  padding: 5px 7px 15px 7px;
+}
+
+  .ttl-contact-form {
+    margin-bottom: 10px;
+    font-size: 1.0em;
+  }
+
+  .box-contact-form-detail {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #888;
+  }
+
+  .wpcf7-text, .wpcf7-textarea, .wpcf7-select {
+    padding:10px;
+    font-size:1.0em;
+    font-family:Arial, sans-serif;
+    color:#000;
+    border:solid 1px #ccc;
+    margin:0 0 20px;
+    width: 278px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+    .wpcf7-textarea {
+      margin-bottom: 10px;
+    }
+
+    /* なぜかセレクトフォームだけwidthが異なる設定。 */
+    .wpcf7-select {
+      width:298px;
+    }
+
+    .wpcf7-text:focus, .wpcf7-textarea:focus, .wpcf7-select:focus  {
+        border:solid 1px #ff9900;
+    }
+
+  .wpcf7-submit {
+    display: inline-block;
+    min-width: 100px;
+    min-height: 40px;
+    margin: 0;
+    padding: 3pt 5pt;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    background-color: #ff9933;
+  }
+
+    .wpcf7-submit:hover, .wpcf7-submit:active {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      background-color: #ffcc99;
+      color: #fff;
+    }
+
+    .box-form-parts-submit {
+      text-align: center;
+    }
+
+@media (min-width: 768px) {
+  .area-contact-form {
+    width: 624px;
+  }
+
+    .wpcf7-text, .wpcf7-textarea, .wpcf7-select {
+      min-width:594px;
+    }
+      /* なぜかセレクトフォームだけwidthが異なる設定。 */
+      .wpcf7-select {
+        width:614px;
+      }
+
+  .box-form-parts-submit {
+    text-align: right;
+  }
 }

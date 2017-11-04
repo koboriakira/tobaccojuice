@@ -13,6 +13,10 @@ gulp.task('browser-sync', ['server'], () =>
 /* デプロイ作業 */
 gulp.task('deploy', ['dist-css', 'dist-js', 'dist-img', 'dist-nrm', 'dist-fa-css', 'dist-fa-fonts', 'dist-vue', 'ftp'])
 
+/* watch */
+gulp.task('watch', function(){
+    gulp.watch('common/css/*.css', ['dist-css']);
+});
 
 
 gulp.task('server', () =>

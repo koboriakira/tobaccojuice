@@ -46,4 +46,7 @@
     return include( TEMPLATEPATH . '/share-sns-btn.php' );
   }
 
+  function get_contact_form() {
+    return include( TEMPLATEPATH . '/contact-form.php' );
+  }
 ?>

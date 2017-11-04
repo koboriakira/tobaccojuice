@@ -52,12 +52,21 @@
       <!-- .contents-main -->
 
       <div class="contents-sub">
+        <!-- 簡易プロフィール -->
+        <?php get_smart_profile(); ?>
+
+        <!-- おすすめ記事 -->
         <div class="area-recommend">
           <?php get_related_entries(); ?>
           <?php get_popular_entries(); ?>
-        </div>
-        <?php get_smart_profile(); ?>
-        <!-- .area-recommend -->
+        </div><!-- .area-recommend -->
+
+        <!-- 問い合わせフォーム -->
+        <div class="area-contact-form">
+          <h3 class="ttl-contact-form">お問い合わせ</h3>
+          <p class="box-contact-form-detail">ブログのご感想などお気軽にご連絡ください。</p>
+          <?php echo do_shortcode('[contact-form-7 id="2511" title="Contact form 1"]') ?>
+        </div><!-- .area-contact-form -->
       </div>
       <!-- .contents-sub -->
 

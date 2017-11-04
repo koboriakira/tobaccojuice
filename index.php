@@ -79,6 +79,12 @@
           <?php get_popular_entries(); ?>
         </div>
         <!-- .area-recommend -->
+        <div class="area-contact-form">
+          <h3 class="ttl-contact-form">お問い合わせ</h3>
+          <p class="box-contact-form-detail">イベントや執筆の依頼など、有償／無償問わずお気軽にお問い合わせください。</p>
+          <?php echo do_shortcode('[contact-form-7 id="2511" title="Contact form 1"]') ?>
+        </div>
+        <div style="clear:both;"></div>
       </div>
       <!-- .contents-sub -->
 
