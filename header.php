@@ -33,12 +33,9 @@
           <h1 class="ttl-main"><?php bloginfo('name'); ?></h1>
         </a>
       </div><!-- .box-title -->
-
-      <div style="font-size:0.8em; text-align:center;">
-        ※サイトリニューアル中。
-      </div>
-      <!--
-        ナビゲーション。製作中のためコメントアウト中。
-        利用するときはget_navigation()で呼び出せばOK。
-        -->
+      <?php
+        if (is_home()) {
+          get_navigation();
+        }
+      ?>
     </header>
