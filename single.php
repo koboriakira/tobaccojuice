@@ -65,7 +65,7 @@
         <div class="area-contact-form">
           <h3 class="ttl-contact-form">お問い合わせ</h3>
           <p class="box-contact-form-detail">ブログのご感想などお気軽にご連絡ください。</p>
-          <?php echo do_shortcode('[contact-form-7 id="2511" title="Contact form 1"]') ?>
+          <?php echo do_shortcode('[contact-form-7 id="3099" title="Contact form 1"]') ?>
         </div><!-- .area-contact-form -->
       </div>
       <!-- .contents-sub -->
