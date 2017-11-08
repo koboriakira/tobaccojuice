@@ -387,14 +387,12 @@ input, button, textarea, select {
     font-size: 1em;
   }
 
-  .article-main strong {
+  .article-main strong, .article-main b, .article-main em {
     font-weight: bold;
-    background: linear-gradient(transparent 70%, #ffff66 70%);
   }
 
-  /* 過去記事の強調表現の見た目を揃えるため、普通のemタグとbタグはstrongに合わせる*/
-  .article-main em, .article-main b {
-    font-weight: bold;
+  /* 過去記事の強調表現の見た目を揃えるため、strongとbタグは蛍光ペンをひく*/
+  .article-main strong, .article-main b {
     background: linear-gradient(transparent 70%, #ffff66 70%);
   }
 
