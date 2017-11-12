@@ -15,7 +15,7 @@
   </title>
   <meta name="description" content="サイト説明文" />
   <meta name="keywords" content="キーワード" />
-  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" /> -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/normalize.css" media="all">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/font-awesome.min.css" media="all">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/style.css" type="text/css" />

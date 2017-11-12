@@ -50,13 +50,11 @@ body {
   background-color: #fffffa;
 }
 
-@media
-
 body, input, textarea, select, button {
   /* google fonts */
-  font-family: "Noto Sans Japanese";
-  /* ゴシック */
-  /*font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;*/
+  /*font-family: "Noto Sans Japanese";*/
+   /*ゴシック*/
+  font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
   /* 明朝 */
   /*font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;*/
 }
