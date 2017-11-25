@@ -15,15 +15,14 @@
   </title>
   <meta name="description" content="サイト説明文" />
   <meta name="keywords" content="キーワード" />
-  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'" />
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/normalize.css"  media="none" onload="if(media!='all')media='all'" />
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/font-awesome.min.css"  media="none" onload="if(media!='all')media='all'" />
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/style.css" media="none" onload="if(media!='all')media='all'" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/normalize.css" media="all" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/style.css" media="all" />
+  <!-- フォントのみFOUTにする -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" media="none" onload="if(media!='all')media='all'" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'" />
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" media="all" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/normalize.css"  media="all" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/font-awesome.min.css"  media="all" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/style.css" media="all" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/font-awesome.min.css" media="all" />
   </noscript>
   <!-- [if lt IE 9]>
     <script src="node_module/html5shiv/dist/html5shiv.min.js"></script>
