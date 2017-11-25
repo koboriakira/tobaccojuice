@@ -4,6 +4,7 @@ const browserSync = require('browser-sync')
 const gutil = require('gulp-util')
 const ftp = require('vinyl-ftp')
 const cleancss = require('gulp-clean-css');
+const markdown = require('gulp-markdown')
 
 /* browser-syncを利用*/
 gulp.task('browser-sync', ['server'], () =>
@@ -16,6 +17,13 @@ gulp.task('deploy', ['dist-css', 'dist-js', 'dist-img', 'dist-nrm', 'dist-fa-css
 /* watch */
 gulp.task('watch', function(){
     gulp.watch('common/css/*.css', ['dist-css']);
+});
+
+/* ブログ執筆用。blog.mdをblog.htmlに変換 */
+gulp.task('markdown', function () {
+    return gulp.src('blog/*.md')
+        .pipe(markdown())
+        .pipe(gulp.dest('blog/dist'));
 });
 
 
