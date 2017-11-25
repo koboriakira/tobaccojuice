@@ -164,6 +164,7 @@ input, button, textarea, select {
   text-align: center;
   color: #fff;
   background-color: #ff9933;
+  text-decoration: none;
 }
 
 .link-btn-cmn:hover, .page-numbers:hover, .link-pager a:hover {
@@ -459,6 +460,11 @@ input, button, textarea, select {
     .article-main ol li {
       list-style-type: decimal;
     }
+
+  .article-main [href^="http"]:not([href*="koboriakira.com"])::after {
+    content: " \f08e";
+    font-family: FontAwesome;
+  }
 
 .contents-sub {
 
