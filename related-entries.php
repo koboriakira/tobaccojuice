@@ -18,9 +18,9 @@ $query = new WP_Query($args); ?>
       <ul class="mod-article-list">
         <?php while ($query -> have_posts()) : $query -> the_post(); ?>
           <li>
-            <a href="<?php the_permalink(); ?>">
-                <h5 class="mod-article-link"><?php the_title();　?></h5>
-            </a>
+            <h5 class="mod-article-link">
+              <a href="<?php the_permalink(); ?>"><?php the_title();　?></a>
+            </h5>
           </li>
         <?php endwhile;?>
       </ul>

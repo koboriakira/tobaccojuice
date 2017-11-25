@@ -32,7 +32,7 @@
                 <li><i class="fa fa-folder fa-1x"></i> <?php the_category(); ?></li>
                 <li><i class="fa fa-tags fa-1x"></i> <?php the_tags(''); ?></li>
               </ul>
-              <a href="<?php the_permalink() ?>">
+              <a class="non-deco" href="<?php the_permalink() ?>">
                 <hi class="ttl-article-summary"><?php the_title() ?></hi><!-- .ttl-article -->
               </a>
               <div class="mod-article-lead-cmn box-article-summary-lead">

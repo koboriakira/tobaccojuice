@@ -28,17 +28,17 @@ html {
 
 body {
   background-color: #fffffa;
-  color: #000;
-  line-height: 1.6em;
-  font-size: 16px;
+  color: #111;
+  font-size: 100%;
+  line-height: 1.6rem;
   font-weight: 200;
   -webkit-text-size-adjust: 100%;
 }
 
 @media (min-width:768px) {
   body {
-    line-height: 1.8;
-    font-size: 16px;
+    line-height: 1.8rem;
+    font-size: 100%;
   }
 }
 
@@ -50,11 +50,10 @@ body {
   background-color: #fffffa;
 }
 
-@media
-
 body, input, textarea, select, button {
+  font-family: "Noto Sans Japanese", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
   /* google fonts */
-  font-family: "Noto Sans Japanese";
+  /*font-family: "Noto Sans Japanese";*/
   /* ゴシック */
   /*font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;*/
   /* 明朝 */
@@ -62,7 +61,7 @@ body, input, textarea, select, button {
 }
 
 p {
-  margin: 0 0 30pt 0;
+  margin: 0 0 2rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,12 +83,16 @@ li {
 a {
   color: #0044cc;
   font-weight: bold;
-  text-decoration: none;
 }
 
-a:hover {
-  color: #90c0f0;
-}
+  a:hover {
+    color: #ffffff;
+    background-color: #eeaaaa;
+  }
+
+  a.non-deco {
+    text-decoration: none;
+  }
 
 strong, em {
   font-weight: 200;
@@ -102,16 +105,15 @@ img, iframe {
 }
 
 blockquote {
-  margin: 0 0 30pt 0;
+  margin: 0 0 2rem 0;
   border-left: 2px solid #ff9933;
-  padding: 5pt 8pt 5pt 8pt;
+  padding: 1rem 0.3rem 0.3rem 1rem;
   background-color: #eee;
 }
 
 blockquote > p {
-  margin-bottom: 20pt;
-  font-size: 0.9em;
-  line-height: 1.8em;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
 }
 
 input, button, textarea, select {
@@ -189,7 +191,7 @@ input, button, textarea, select {
 }
 
 .mod-list-cmn {
-  padding-left: 20pt;
+  padding-left: 1.5rem;
 }
 
 .mod-list-cmn > li {
@@ -198,12 +200,12 @@ input, button, textarea, select {
 }
 
 .mod-article-lead-cmn {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: #808080;
 }
 
 .note {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   color: #808080;
 }
 
@@ -229,7 +231,7 @@ input, button, textarea, select {
     .link-btn-share-sns {
       padding: 0 5pt;
       border-radius: 5px;
-      font-size: 0.8em;
+      font-size: 0.8rem;
     }
 
     .box-share-btn-hatena {
@@ -237,22 +239,22 @@ input, button, textarea, select {
     }
 
       .link-btn-twitter {
-        font-size: 0.8em;
+        font-size: 0.8rem;
         background-color: #0092e6;
       }
 
         .link-btn-twitter:hover {
-          font-size: 0.8em;
+          font-size: 0.8rem;
           background-color: #33b0ff;
         }
 
       .link-btn-facebook {
-        font-size: 0.8em;
+        font-size: 0.8rem;
         background-color: #3c61b6;
       }
 
         .link-btn-facebook:hover {
-          font-size: 0.8em;
+          font-size: 0.8rem;
           background-color: #70a0e0;
         }
 
@@ -271,13 +273,13 @@ input, button, textarea, select {
   }
 
     .ttl-main {
-      font-size: 0.9em;
+      font-size: 0.9rem;
       color: #bbb;
     }
 
   .header-nav-menu {
     border: 1px solid menu;
-    background-color: #fafafa;
+    background-color: #eee;
     width: 100%;
     max-width: 640px;
     margin: 8pt auto 0;
@@ -298,9 +300,19 @@ input, button, textarea, select {
         .mod-nav-cmn {
           display: inline-block;
           float: left;
+          min-width: 50pt;
           margin: 0;
           padding: 5pt 10pt;
-          font-size: 0.9em;
+          font-size: 0.9rem;
+        }
+
+        a:hover .mod-nav-cmn {
+          color: #fff;
+          background-color: #eeaaaa;
+        }
+
+        a:hover .mod-nav-cmn i {
+          color: #f00;
         }
 
 
@@ -323,24 +335,28 @@ input, button, textarea, select {
   }
 
     .ttl-article {
-      font-size: 1.2em;
+      font-size: 1.2rem;
     }
 
 .box-article-lead {
   /*border-top: 1px solid #ccc;*/
   border-bottom: 1px solid #ccc;
-  margin-top: 10pt;
+  margin-top: 0.8rem;
   padding: 8pt 0;
 }
 
 .area-article-meta-info {
   margin: 3pt 0 0 0;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
+
+  .box-article-meta-info a {
+    text-decoration: none;
+  }
 
   .box-article-meta-info > li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 0.8rem;
   }
 
     .box-article-meta-info > li > i {
@@ -348,15 +364,15 @@ input, button, textarea, select {
     }
 
 .article-toc {
-  margin-top: 20pt;
+  margin-top: 1rem;
 }
   .article-toc-title {
     text-align: left;
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
 
   .toc-list {
-    margin: 8pt 0 0 10pt;
+    margin: 0.5rem 0 0 0.8rem;
     padding: 0;
   }
 
@@ -365,26 +381,26 @@ input, button, textarea, select {
     }
 
     .toc-sub-list {
-      margin:0 0 5pt 20pt;
+      margin:0 0 0.3rem 1.3rem;
       padding: 0;
     }
 
       .toc-sub-list > li {
-        font-size: 0.9em;
+        font-size: 0.9rem;
       }
 
 .article-main {
-  margin: 25pt 0 0 0;
+  margin: 1.3rem 0 0 0;
 }
 
   .article-main h2 {
-    margin: 4em 0 2em 0;
-    font-size: 1.1em;
+    margin: 4rem 0 2rem 0;
+    font-size: 1.1rem;
   }
 
   .article-main h3 {
-    margin: 3em 0 2em 0;
-    font-size: 1em;
+    margin: 3rem 0 2rem 0;
+    font-size: 1rem;
   }
 
   .article-main strong, .article-main b, .article-main em {
@@ -413,7 +429,7 @@ input, button, textarea, select {
   }
 
   .article-main hr {
-    margin: 3em 0;
+    margin: 3rem 0;
     border-style: none;
   }
 
@@ -422,13 +438,13 @@ input, button, textarea, select {
     }
 
   .article-main ul, .article-main ol {
-      padding-left: 1.5em;
-      margin-bottom: 2em;
+      padding-left: 1.5rem;
+      margin-bottom: 2rem;
   }
 
     .article-main li {
       list-style-position: inside;
-      padding-bottom: 1em;
+      padding-bottom: 1rem;
     }
 
     .article-main li:last-child {
@@ -454,53 +470,53 @@ input, button, textarea, select {
     border-bottom: 1pt solid #ccc;
     border-left: 1pt solid #ccc;
     margin-top: 25pt;
-    padding: 10pt 8pt 0 8pt;
+    padding: 0.6rem 0.5rem 0 0.5rem;
   }
 
     .box-recommend {
       margin-bottom: 0;
-      padding-bottom: 10pt;
+      padding-bottom: 0.6rem;
     }
 
     .mod-article-list {
-      margin: 7pt 0 0 0;
+      margin: 0.5rem 0 0 0;
     }
 
       .mod-article-list > li {
-        margin-top: 7pt;
+        margin-top: 0.5rem;
       }
 
         .mod-article-link {
-          font-size: 0.8em;
+          font-size: 0.8rem;
         }
 
     .ttl-recommend-article {
     }
 
   .area-article-comment {
-    margin-top: 15pt;
-    padding-top: 10pt;
+    margin-top: 1rem;
+    padding-top: 0.7rem;
   }
 
     .ttl-article-comments {
-      font-size: 1em;
+      font-size: 1rem;
     }
 
     .article-comment {
-      margin: 10pt 0 0 0;
+      margin: 0.7rem 0 0 0;
     }
 
     .article-comment-res {
-      padding-left: 15pt;
+      padding-left: 1rem;
     }
 
     .comment-meta-info {
-      font-size: 0.8em;
+      font-size: 0.8rem;
       color: #888;
     }
 
     .comment-main {
-      font-size: 0.9em;
+      font-size: 0.9rem;
     }
 
     .comment-main > p {
@@ -508,11 +524,11 @@ input, button, textarea, select {
     }
 
     .article-comment-form {
-      margin-top: 20pt;
+      margin-top: 1.2rem;
     }
 
       .mod-comment-form-cmn {
-        margin-top: 5pt;
+        margin-top: 0.4rem;
       }
 
         .form-text-name {
@@ -559,7 +575,7 @@ input, button, textarea, select {
 }
 
 .ttl-works-genre {
-  padding-left: 10pt;
+  padding-left: 0.7rem;
   color: #000;
 }
 
@@ -568,7 +584,7 @@ input, button, textarea, select {
 }
 
 .ttl-works-sub-genre {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .box-grid-square {
@@ -595,8 +611,8 @@ input, button, textarea, select {
 }
   .box-article-summary {
     border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 15pt;
-    padding-bottom: 5pt;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
   }
 
     .box-article-summary-meta-info {
@@ -605,13 +621,13 @@ input, button, textarea, select {
     }
 
     .ttl-article-summary {
-      margin-bottom: 5pt;
+      margin-bottom: 0.4rem;
       font-size: 1.1em;
       font-weight: bold;
     }
 
     .box-article-summary-lead {
-      margin-top: 10pt;
+      margin-top: 0.7rem;
     }
 
 /* ==============================================================
@@ -645,12 +661,12 @@ h2.screen-reader-text {
 ==============================================================*/
 
 .footer {
-  margin-top: 25pt;
-  padding: 15pt 0 15pt 0;
+  margin-top: 1.5rem;
+  padding: 1rem 0 1rem 0;
 }
   .footer-copyright {
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     color: #bbb;
   }
 
@@ -723,7 +739,7 @@ h2.screen-reader-text {
 
       .box-smart-profile-text > p {
         margin: 5pt 30pt 0 30pt;
-        font-size: 0.9em;
+        font-size: 0.9rem;
       }
 }
 

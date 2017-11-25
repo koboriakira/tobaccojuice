@@ -8,8 +8,8 @@
     <p>ラッパー、トラックメイカー、DJ。<br/>
     1989年1月6日の「最後の昭和生まれ、最初の平成生まれ」。</p>
     <p>
-      [<a href="<?php echo esc_url( home_url( '/', 'http' ) ); ?>info/profile/">プロフィール</a>], 
-      [<a href="<?php echo esc_url( home_url( '/', 'http' ) ); ?>info/discography/">ディスコグラフィ</a>]
+      [<a class="non-deco" href="<?php echo esc_url( home_url( '/', 'http' ) ); ?>info/profile/">プロフィール</a>]
+      [<a class="non-deco" href="<?php echo esc_url( home_url( '/', 'http' ) ); ?>info/discography/">ディスコグラフィ</a>]
     </p>
   </div><!-- .box-smart-profile -->
 </section><!-- .area-smart-profile -->

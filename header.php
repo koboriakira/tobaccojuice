@@ -34,7 +34,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="box-title">
-        <a href="<?php echo esc_url( home_url( '/', 'http' ) ); ?>">
+        <a class="non-deco" href="<?php echo esc_url( home_url( '/', 'http' ) ); ?>">
           <h1 class="ttl-main"><?php bloginfo('name'); ?></h1>
         </a>
       </div><!-- .box-title -->

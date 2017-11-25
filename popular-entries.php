@@ -6,9 +6,11 @@
     // ループ開始
     query_posts('meta_key=post_views_count&orderby=meta_value_num&posts_per_page=5&order=DESC'); while(have_posts()) : the_post(); ?>
       <li>
-        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-            <h5 class="mod-article-link"><?php the_title();　?></h5>
-        </a>
+        <h5 class="mod-article-link">
+          <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+              <?php the_title();　?>
+          </a>
+        </h5>
       </li>
   <?php endwhile; ?>
   </ul>
