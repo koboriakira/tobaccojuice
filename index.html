@@ -8,13 +8,16 @@
   <title>ページタイトル | コボリアキラの要約と反復</title>
   <meta name="description" content="サイト説明文" />
   <meta name="keywords" content="キーワード" />
-  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" media="all">
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" media="all">
-  <link rel="stylesheet" href="common/css/base.css" media="all">
-  <link rel="stylesheet" href="common/css/single.css" media="all">
-  <script src="node_modules/vue/dist/vue.js"></script>
-  <script src="common/js/common.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" media="none" onload="if(media!='all')media='all'" />
+  <link rel="stylesheet" href="dist/css/normalize.css" media="all" media="none" onload="if(media!='all')media='all'" />
+  <link rel="stylesheet" href="dist/css/font-awesome.min.css" media="all" media="all" media="none" onload="if(media!='all')media='all'" />
+  <link rel="stylesheet" href="common/css/style.css" media="all" media="all" media="none" onload="if(media!='all')media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
+    <link rel="stylesheet" href="dist/css/normalize.css" media="all" />
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css" media="all" media="all" />
+    <link rel="stylesheet" href="common/css/style.css" media="all" media="all" />
+  </noscript>
   <!-- [if lt IE 9]>
     <script src="node_module/html5shiv/dist/html5shiv.min.js"></script>
   <![endif]-->
@@ -112,6 +115,8 @@
       <span>Copyright koboriakira</span>
     </div><!-- .fotter-copyright -->
   </footer>
+  <script src="node_modules/vue/dist/vue.js"></script>
+  <script src="common/js/common.js"></script>
 </body>
 
 </html>

@@ -8,14 +8,16 @@
   <title>ページタイトル | コボリアキラの要約と反復</title>
   <meta name="description" content="サイト説明文" />
   <meta name="keywords" content="キーワード" />
-  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" media="all">
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" media="all">
-  <link rel="stylesheet" href="common/css/base.css" media="all">
-  <link rel="stylesheet" href="common/css/single.css" media="all">
-  <link rel="stylesheet" href="style.css" media="all">
-  <script src="node_modules/vue/dist/vue.js"></script>
-  <script src="common/js/common.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" media="none" onload="if(media!='all')media='all'" />
+  <link rel="stylesheet" href="dist/css/normalize.css" media="all" media="none" onload="if(media!='all')media='all'" />
+  <link rel="stylesheet" href="dist/css/font-awesome.min.css" media="all" media="all" media="none" onload="if(media!='all')media='all'" />
+  <link rel="stylesheet" href="common/css/style.css" media="all" media="all" media="none" onload="if(media!='all')media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
+    <link rel="stylesheet" href="dist/css/normalize.css" media="all" />
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css" media="all" media="all" />
+    <link rel="stylesheet" href="common/css/style.css" media="all" media="all" />
+  </noscript>
   <!-- [if lt IE 9]>
     <script src="node_module/html5shiv/dist/html5shiv.min.js"></script>
   <![endif]-->
@@ -61,15 +63,11 @@
           </h1>
           <!-- .ttl-article -->
           <div class="area-article-meta-info">
-            <span class="posted-date">
-              <i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> <a href="">2015/11/26</a>
-            </span>
-            <span class="folder">
-              <i class="fa fa-folder-o fa-1x"></i> <a href="">音楽制作</a>
-            </span>
-            <span class="tag">
-              <i class="fa fa-tags fa-1x"></i> <a href="">DJ</a>、<a href="">ダミータグ</a>、<a href="">ダミータグ</a>、<a href="">ダミータグ</a>、<a href="">ダミータグ</a>、<a href="">ダミータグ</a>
-            </span>
+            <ul class="box-article-meta-info">
+              <li><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> <a href="">2015/11/26</a></li>
+              <li><i class="fa fa-folder fa-1x"></i> <a href="">音楽制作</a></li>
+              <li><i class="fa fa-tags fa-1x"></i> <a href="">DJ</a>、<a href="">ダミータグ</a>、<a href="">ダミータグ</a>、<a href="">ダミータグ</a>、<a href="">ダミータグ</a>、<a href="">ダミータグ</a></li>
+            </ul>
           </div><!-- .area-article-meta-info -->
         </div>
         <!-- .area-article-ttl -->
@@ -135,9 +133,14 @@
             ミックスして違和感のないものを選ぶ
           </h2>
           <!-- .ttl-chapter -->
-          <p>選曲の成功を決めるのは<strong class="term-cmn">繋がり</strong>を生み出せているかどうか、というのが全体的な結論です。それでは、具体的にどのように行えばよいでしょうか。</p>
+          <p>選曲の成功を決めるのは<em class="term">繋がり</em>を生み出せているかどうか、というのが全体的な結論です。それでは、具体的にどのように行えばよいでしょうか。</p>
           <p>まず浮かぶのは、<em class="text-strong-cmn text-strong-bg">実際にミックスされるお互いの曲に繋がりを持たせる</em>ことです。この方法は、DJの一番基本的な考え方だと思います。</p>
 
+          <blockquote>
+            <p>引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー</p>
+            <p>引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー引用文ダミー</p>
+            <p><cite>だれか</cite></p>
+          </blockquote>
           <h3 class="ttl-section">
             リズムの一致しているものを選ぶ
           </h3>
@@ -277,6 +280,8 @@
       <span>Copyright koboriakira</span>
     </div><!-- .fotter-copyright -->
   </footer>
+  <script src="node_modules/vue/dist/vue.js"></script>
+  <script src="common/js/common.js"></script>
 </body>
 
 </html>
